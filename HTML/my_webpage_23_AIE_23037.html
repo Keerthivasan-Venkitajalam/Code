@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Helvetica Neue;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #34495e; /* Dark Blue */
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.header img {
+  width: 100%; /* This will scale the width of the image to the width of its container */
+  height: auto; /* This will scale the height of the image while maintaining its aspect ratio */
+  aspect-ratio: 14 / 4; /* This will force the image to have an aspect ratio of 16:9 */
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #2c3e50;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #2980b9; /* Medium Blue */
+  color: #ecf0f1; /* Off White */
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #bdc3c7;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #7f8c8d; 
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #34495e;
+  margin-top: auto;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Keerthivasan Venkitajalam</h1>
+  <p> • BTech CSE AI //Year I • Student at Amrita Vishwa Vidhyapeetham </p>
+  <img src="https://media.licdn.com/dms/image/D5616AQFnfAlA6guc3w/profile-displaybackgroundimage-shrink_350_1400/0/1706123868400?e=1713398400&v=beta&t=C4x9FnU19ZCCDd7NNmFqq-pJRYjR5sCSO0TY-Rwvk-8" alt="Keerthivasan S V">
+</div>
+
+<div class="topnav">
+  <a href="https://www.linkedin.com/in/keerthivasan-venkitajalam-413127218/" target="_blank">LinkedIn</a>
+  <a href="https://github.com/Keerthivasan-Venkitajalam">GitHub</a>
+<a href="https://www.instagram.com/keerrrthiv">Instagram</a>
+  <a href="https://twitter.com/KeerthiV_SV" style="float:right" target="_blank">Twitter</a>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About</h2>
+      <h5>updated 18th february, 2024...</h5>
+      <div class="fakeimg" style="height:250px; width:850 px;">
+        <img src="https://www.freewebheaders.com/wp-content/gallery/technology-industry-size-800x200/cache/blue-neon-cubes-technology-transfer-web-header_size-800x200.jpg-nggid049955-ngg0dyn-800x200x100-00f0w010c010r110f110r010t010.jpg">
+      </div>
+      <p>I'm a B.Tech student majoring in Computer Science with a specialization in Artificial Intelligence.</p> 
+
+       <p>Passionate about the intersection of artificial intelligence and medicine, I am driven to leverage technology for advancements in healthcare.</p> 
+ 
+        
+       <p>Eager to contribute innovative solutions, I actively explore AI applications in deep learning, machine learning, medical research and diagnostics.</p> 
+
+        
+       <p>Grateful for the knowledge gained, I look forward to applying these skills in future endeavors. Here's to more learning and growth.</p> 
+
+        
+       <p>Additionally, keenly interested in cybersecurity and exploring opportunities to further contribute to this dynamic field. Open to networking and collaboration opportunities in AI, medicine, and cybersecurity.</p>
+    </div>
+    <div class="card">
+      <h2>Project experiences of SEMESTER 1</h2>
+      <h5>updated 18th february, 2024...</h5>
+      <div class="fakeimg" style="height:250px; width:250px;"><img src="https://media.licdn.com/dms/image/D5603AQEDT_RIlmfEuw/profile-displayphoto-shrink_200_200/0/1705675979236?e=1713398400&v=beta&t=cBm_BADRRf1wljTQihFAWR8vSVzv37K8vg4FDWI3gqc" alt="Keerthivasan S V"></div>
+      <p>I am thrilled to announce that I have completed my first semester of my UG course on Computer science in a specialization in AI, It has been a journey of learning and growth, and I am proud of the projects I have accomplished in each of my subjects:</p> 
+
+
+        <p>Mathematics for Computing: I developed a facial recognition system using Principal Component Analysis (PCA) and Singular Value Decomposition (SVD). This project allowed me to apply mathematical concepts to real-world applications.</p> 
+
+        
+        <p>Problem Solving & C Programming: I created a header file for matrix operations in C programming. This project helped me understand the importance of efficient code organization and reusable components in software development.</p> 
+
+        
+        <p>Elements of Computing: I designed a CPU architecture and implemented a serial binary adder using SR flip-flops in Hardware Description Language (HDL). This project gave me a deeper understanding of how computers work at the hardware level.</p> 
+
+        
+        <p>Computational Physics: I worked on several projects related to air flight dynamics. These included the analysis and optimization of aircraft fuel consumption and emissions, the conceptualization of future aircraft, and the creation of a mathematical model for fuel consumption. These projects allowed me to apply physics concepts to practical problems in aviation.</p> 
+
+        
+        <p>Discrete Mathematics: I developed an email spam classifier using the Naive Bayes classifier. This project allowed me to apply mathematical concepts to machine learning and data classification. I used a corpus of spam and ham emails to train and test the classifier. It worked well but yet a primitive model indeed.</p> 
+
+        
+        <p>I am grateful for the knowledge I have gained and look forward to applying these skills in my future endeavors. Here’s to more learning and growth in the coming semesters! </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h1>About Me</h1>
+      <h2>Work experience</h2>
+
+      <p>Member	2023-09 - present
+        Google Developer Students Club, Coimbatore, IN</p>
+        
+      <p>Student Representative	2022-04 - 2023-03
+        Jawahar Higher Secondary School, Cuddalore, IN </p> 
+         
+        
+      <h2>Education</h2>
+        <p>Bachelor of Technology
+        Amrita Vishwa Vidyapeetham</p>
+
+        <p>Bachelor of Technology - BTech, Computer Science * (August 2023 - March 2027)</p> 
+
+        <p>Jawahar Higher Secondary School, Neyveli * (2012 - 2023) 
+        </p>
+
+    <div class="card">
+      <h3>Popular posts</h3>
+      <div class="fakeimg"><p><a href="https://media.licdn.com/dms/image/D5622AQGxpRuGw5FCqg/feedshare-shrink_2048_1536/0/1706191864618?e=1710979200&v=beta&t=s6HDICVCi-prAQR1Ay2s2skTvwy2EYyGbZ0qY8gTctU" target="_blank">GDSC bootcamp</p></div>
+      <div class="fakeimg"><p><a href="https://media.licdn.com/dms/image/D5622AQFRmlJ8Lov5hQ/feedshare-shrink_2048_1536/0/1704910555658?e=1710979200&v=beta&t=CRysh6b9-uGUCNbf0eeK_R0ue94HLZne-8o45F0CTRc" target="_blank">Cybersecurity by Google and Coursera</p></div>
+       <div class="fakeimg"><p><a href="https://learn.microsoft.com/api/achievements/share/en-us/KEERTHIVASANSV-2793/FZC7FPEX?sharingId=42EF4716B76C32CE" target="_blank">AZURE STATIC WEBSITE</p></div>
+    </div>
+    <div class="card">
+      <h3>EMAIL AT...</h3>
+      <a href="mailto:keerthivasansv2006@outlook.com">keerthivasansv2006@outlook.com</a>
+    </div>
+
+    </div>
+    <div class="card">
+      <h3>Achievements</h3>
+      <p>My project submission on "Air flight fuel efficiency and sustainable development" was shortlisted for the google solutions challenge all india bootcamp 2023</p>
+    <div class="card">
+      <h3>Follow Me</h3>
+<p>
+  <a href="https://www.instagram.com/keerrrthiv" target="_blank">@keerrrthiv - INSTAGRAM</a>, 
+  <a href="https://www.linkedin.com/in/keerthivasan-venkitajalam-413127218/" target="_blank">@keerthivasan-venkitajalam - LINKEDIN</a> and 
+  <a href="https://github.com/Keerthivasan-Venkitajalam" target="_blank">@Keerthivasan-Venkitajalam - GitHub</a>
+</p>
+<a href="https://twitter.com/KeerthiV_SV" style="float:right" target="_blank">Twitter</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank you for visiting...</h2>
+</div>
+
+</body>
+</html>

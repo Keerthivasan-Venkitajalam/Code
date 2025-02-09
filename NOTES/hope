@@ -1,0 +1,18 @@
+3.1 Understanding Spam and Non-Spam Emails
+
+Spam emails, also known as junk emails, refer to unsolicited messages sent in bulk. These messages are often commercial in nature and can reach millions of people every day. On the other hand, non-spam emails are those that the recipient has granted verifiable permission for the message to be sent. 
+
+Spam emails can have potentially serious consequences as they may contain malicious links or attachments and are often a vector for other serious attacks like phishing and malware. Some common types of spam include ads offering products and services, chain letters persuading you to pass the message along, email spoofing where spammers impersonate someone you know, hoaxes offering miracle promises, and money scams promising easy money.
+
+3.2 Indicators of Spam Messages
+
+Identifying spam can be challenging as spammers regularly update their methods and messages to trick potential victims. However, there are some common indicators of spam or phishing texts: they often come from an email address or untraceable phone number, include suspicious links, contain obvious spelling errors, extend an offer that is too good to be true, or request personal information. Being aware of these indicators can help in effectively distinguishing between spam and non-spam emails.
+
+3.3 Naive Bayes Classification Framework
+
+Naive Bayes is a probabilistic algorithm based on the Bayes' theorem, which calculates the posterior probability of a class label given some features. In the context of email spam detection, the class label is either spam or ham (non-spam), and the features are the words or tokens in the email content. The naive assumption is that the features are independent of each other given the class label. The algorithm can be trained on a labeled dataset of emails, where the prior probabilities of each class and the conditional probabilities of each feature given each class are estimated from the data. The algorithm can then classify a new email by applying the Bayes' rule and choosing the class with the highest posterior probability.
+
+3.4 Evaluation Metrics
+
+To evaluate the performance of the naive Bayes classifier, several metrics can be used, such as accuracy, precision, recall, and F1-score. Accuracy is the ratio of correctly classified emails to the total number of emails. Precision is the ratio of correctly classified spam emails to the total number of emails classified as spam. Recall is the ratio of correctly classified spam emails to the total number of actual spam emails. F1-score is the harmonic mean of precision and recall, which balances both metrics. These metrics can be calculated on a test set of emails that are not used for training the classifier. Additionally, a confusion matrix can be used to visualize the true and false positives and negatives of the classifier.
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Company</title>
+    <style>
+        /* CSS Code */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+#companyLogo {
+    width: 100px;
+    height: auto;
+}
+
+#headerWithBackgroundImage {
+    flex-grow: 1;
+    background-image: url('header-background.jpg');
+    height: 100px;
+}
+
+#profileSettings {
+    position: relative;
+}
+
+#dropdownMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+#dropdownMenu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+article {
+    flex-grow: 1;
+    margin-left: 20px;
+    overflow-y: scroll;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logo.png" alt="Company Logo" id="companyLogo">
+        <div id="headerWithBackgroundImage"></div>
+        <div id="profileSettings">
+            <button onclick="toggleDropdown()">Profile Settings</button>
+            <div id="dropdownMenu">
+                <a href="#">Profile</a>
+                <a href="#">Logout</a>
+                <a href="#">Change Password</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Navigation Links -->
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+
+        <!-- Story Content -->
+        <article>
+            <p>Your story content goes here.</p>
+            <!-- Add more paragraphs and images as needed -->
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="copyrightInfo">Copyright Info</div>
+        <div id="footerLinks">
+            <a href="#">Contact Us</a>
+            <a href="#">Information</a>
+        </div>
+        <div id="developerDetails">Developer Details</div>
+    </footer>
+</body>
+</html>

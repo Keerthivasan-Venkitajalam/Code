@@ -1,0 +1,16 @@
+Discrete mathematics plays a crucial role in email spam detection. Here are a couple of ways it is used:
+
+1. **Hidden Markov Models (HMMs)**: HMMs are statistical models that use a series of observable data to recover the sequence of states¹. In the context of spam detection, an HMM can be used to take advantage of word order information to detect spam SMS¹. This method has shown excellent results compared to other traditional and even novel machine learning models¹.
+
+2. **Naive Bayes Algorithm**: This algorithm is based on Bayes' Theorem, a principle in probability theory and statistics that describes how to update the probabilities of hypotheses when given evidence². It is often used in spam detection to classify emails based on the frequency of specific phrases such as “Please enter your bank account number here” or “Congratulations, you’ve won 100,000$! These patterns are recognizable by computer algorithms and are used as decisive factors to judge the nature of an email².
+
+These methods illustrate how discrete mathematics can be applied to practical problems like email spam detection.
+
+
+
+SAUCE...
+1) GIT HUB
+2) SLIDE SHARE AND SCRIBD
+3) PYTHON BABA
+4) IEEE
+5) Chat Bots

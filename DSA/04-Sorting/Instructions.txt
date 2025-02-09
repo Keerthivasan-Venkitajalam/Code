@@ -1,0 +1,16 @@
+Assignment 4
+
+Download and extract the assignment files.
+There are 7 questions, numbered 0.c, 1.c, 2.c, ..., 6.c.
+For each question, complete the functions in sorting.c as instructed in the question file.
+Do not edit the question files, sorting.h, structure.c and structure.h.
+Once completed, upload your sorting.c file only.
+
+Submission deadline: 14th March 2024, 10:00PM
+
+General Instructions:
+
+Command to compile the code for question 1:
+    gcc structure.c sorting.c 1.c -o 1
+Command to run the code for question 1:
+    ./1

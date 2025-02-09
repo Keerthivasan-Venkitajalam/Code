@@ -1,0 +1,15 @@
+Assignment 3
+
+Download and extract the assignment files.
+There are 7 questions, numbered 1.c, 2.c, ..., 7.c.
+For each question, complete the functions in function.c as instructed in the question file.
+Do not edit the question files and function.h.
+Once completed, upload your function.c file.
+
+Submission deadline: 29th February 2024, 10:00PM
+
+
+Command to compile the code for question 1:
+gcc function.c 1.c -o 1
+Command to run the code for question 1:
+./1

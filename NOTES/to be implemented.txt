@@ -1,0 +1,5 @@
+not16
+and16
+or16
+or8way
+add16

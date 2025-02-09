@@ -1,0 +1,25 @@
+Assignment 2
+
+Download and extract the assignment files.
+There are 10 questions, numbered 1.c, 2.c, ..., 10.c.
+For each question, complete the functions in structure.c as instructed in the question file.
+Do not edit the question files and structure.h.
+Once completed, upload your structure.c file.
+
+Submission deadline: 20th February 2024, 10:00PM
+
+General Instructions:
+
+1. All the inputs in the test cases are valid. You don't need to check for the validity of the input.
+2. The integers are in the range [1, 10^5].
+3. Floating point values are to be printed with two decimal digits.
+4. Refer the example program given for reading and writing data.
+5. All scanf() format strings should end with "%*c". Not doing so can lead to issues when reading inputs containing strings and characters.
+6. To read an entire line of input (including whitespace, but not the newline character) into a character array 'str', use the following statement:
+   scanf("%[^\n]%*c", str);
+7. DONOT use fflush() function, as it is not supported in LINUX platforms.
+
+Command to compile the code for question 1:
+gcc structure.c 1.c -o 1
+Command to run the code for question 1:
+./1

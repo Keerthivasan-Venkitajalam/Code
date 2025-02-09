@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Tesla.inc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Set a background color for the body */
+        }
+
+        header {
+            background-color: #7e8a97; /* Rich and elegant header background color */
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            z-index: 1001;
+        }
+
+        .header img {
+            height: 80px;
+        }
+
+        .login {
+            background-color: #7e8a97; /* Rich and elegant login background color */
+            display: flex;
+            position: fixed;
+            height: 100px;
+            width: 25%;
+            align-items: center;
+            z-index: 1001; /* Ensure the login button is on top */
+            right: 0;
+            top: 0;
+            box-sizing: border-box;
+            padding: 0 20px;
+            justify-content: flex-end;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #dfcdd2; /* Rich and elegant navbar background color */
+            position: fixed;
+            top: 100px;
+            width: 15%;
+            height: 70%;
+            padding: 10px;
+            font-size: 24px;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .text {
+            overflow: auto;
+            background-color: #ffffff; /* White background for the text area */
+            color: #333333; /* Darker text color for better readability */
+            position: fixed;
+            top: 100px;
+            width: 82%;
+            height: calc(94% - 200px);
+            padding: 16px;
+            font-size: 24px;
+            z-index: 100;
+            right: 0;
+        }
+
+        .footer {
+            overflow: hidden;
+            background-color: #7e8a97; /* Rich and elegant footer background color */
+            position: fixed;
+            bottom: 0;
+            height: 15%;
+            width: 100%;
+            z-index: 999;
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+            align-items: left;
+            flex-wrap: wrap;
+        }
+
+        .footer p {
+            color: #ffffff; /* White text color for the footer */
+            font-size: 16px;
+            margin: 0;
+            padding: 10px;
+            flex: 1 1 30%;
+            max-width: 30%;
+        }
+
+        .text img {
+            max-width: 100%; /* Limit the maximum width of images to prevent overflow */
+            height: auto; /* Maintain the aspect ratio of images */
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src='https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png' alt="Tesla" style= "height:80px">
+        <div class="title">
+            <b><font size="+6" color=BLACK>Tesla Motors</font></b><br>
+            <b><i><font size="+0.5" color=Brown>Revolutionizing roads, electrifying dreams: Tesla leads the charge into the future</font></i></b>
+        </div>
+        <img src='https://netrinoimages.s3.eu-west-2.amazonaws.com/2020/01/17/674855/281808/tesla_logo_emblem_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_2952527.jpg' alt="Tesla" style= "height:80px">
+    </header>
+
+    <!-- Login -->
+    <div class="login">
+        <div class="dropdown">
+          <button class="dropbtn"><img src='https://cdn-icons-png.flaticon.com/512/6681/6681204.png' height="78px"></button>
+          <div class="dropdown-content">
+            <a href="https://www.tesla.com/supercharger" target="_blank">Login</a>
+            <a href="https://www.tesla.com/model-y" target="_blank">SignUp</a>
+            <a href="https://www.tesla.com/model-x" target="_blank">Forgot Password</a>
+          </div>
+        </div> 
+    </div>
+
+    <div class="container">
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.tesla.com/supercharger" target="_blank">Login</a></li>
+            <li><a href="https://www.tesla.com/model-y" target="_blank">SignUp</a></li>
+            <li><a href="https://www.tesla.com/model-x" target="_blank">Forgot Password</a></li>
+          </ul>
+        </div>
+      </div>
+    <!-- Navigation -->
+    <div class="navbar">
+        <center>
+                    <p><a href="https://www.tesla.com/model-s" target="_blank">Model S</a><br></p>
+                    <p><a href="https://www.tesla.com/model-y" target="_blank">Model Y</a><br></p>
+                    <p><a href="https://www.tesla.com/model-3" target="_blank">Model 3</a><br></p>
+                    <p><a href="https://www.tesla.com/model-x" target="_blank">Model X</a><br></p>
+                    <p><a href="https://www.tesla.com/cybertruck" target="_blank">Cybertruck</a><br></p>
+                    <p><a href="https://www.tesla.com/roadster" target="_blank">Roadster</a><br></p>
+                    <p><a href="https://www.tesla.com/supercharger" target="_blank">Supercharger</a><br></p>
+                    <p><a href="https://www.tesla.com/cybertruck" target="_blank">Solar</a><br></p>
+                    <p><a href="https://www.tesla.com/cybertruck" target="_blank">Energy</a><br></p>
+        </center>
+    </div>
+
+    <!-- Main Content -->
+    <div class="text">
+        <marquee><font size="+6" color=dark blue><b>Innovative engineering meets eco-conscious style: Tesla drives the evolution of transportation. || From Dreaming to Driving, Tesla at Your Service! || From 0 to exhilarating: Tesla accelerates beyond limits, redefining automotive excellence.|| Revolutionizing roads, electrifying dreams: Tesla leads the charge into the future.</b></font></marquee>
+        <p>
+        Welcome to Tesla Motors, the frontier of automotive excellence where innovation meets sustainability, and every mile traversed marks a step towards a brighter, greener future.</p>
+        <img src='https://media.npr.org/assets/img/2023/02/01/gettyimages-1177714952-1--95f350ff5337d36e5f87249be334f9cfe9d0fd2f-s1100-c50.jpg'>
+        <p> At Tesla Motors, we offer more than just cars; we offer experiences waiting to be embraced. From the sleek and sophisticated Model S to the versatile and family-friendly Model Y, from the rugged Cybertruck to the compact yet powerful Model 3, our lineup caters to every driver's needs and desires. </p>
+        <img src='https://cdn.pixabay.com/photo/2023/10/19/17/11/tesla-8327257_640.jpg'>
+         <p> 
+        Start your electric odyssey amidst the urban skyline, where Tesla's Autopilot technology transforms your commute into a seamless blend of cutting-edge innovation and eco-conscious mobility. Feel the exhilaration of instant acceleration, the serenity of silent rides, and the environmental impact of zero-emission driving.</p>
+        <img src='https://blogs.gomechanic.com/wp-content/uploads/2023/05/tesla-roadster.webp'>
+        <p> No Tesla journey is complete without experiencing the revolutionary technology and luxurious design of the Model X. As you glide silently through city streets or embark on epic road trips, immerse yourself in the epitome of future-forward automotive engineering and sustainable luxury. </p>
+        <img src='https://www.rollingstone.com/wp-content/uploads/2023/11/cybertruck-release.jpg?w=1581&h=1054&crop=1'>
+        <p> Venture into the realm of electric mobility with confidence, knowing that Tesla's Supercharger network ensures seamless long-distance travel, while over-the-air updates keep your vehicle at the forefront of innovation. Explore the possibilities of sustainable living with Tesla's solar solutions and energy storage options, each contributing to a greener, more sustainable future.</p>
+        <img src='https://netrinoimages.s3.eu-west-2.amazonaws.com/2020/01/17/674855/281808/tesla_logo_emblem_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_2952527.jpg' alt="Tesla">
+          <p> Immerse yourself in Tesla's commitment to innovation and sustainability as you witness the evolution of transportation. Indulge your senses in the thrill of driving a Tesla, from the intuitive touchscreen interface to the minimalist yet luxurious interiors. Join the Tesla community and become part of a global movement towards a cleaner, greener future. </p>
+       <img src='https://api.freelogodesign.org/assets/blog/thumb/80d93389837d493b80e9f4f2ca3a48ad_1176x840.jpg?t=638349702370000000'>
+       <p>Discover the unparalleled performance and innovation of Tesla's electric cars, boasting groundbreaking technology, exceptional range, and unmatched safety features. At Tesla Motors, we're dedicated to providing you with unparalleled experiences that showcase the best of electric vehicles. Whether you're seeking high-performance, family-friendly, or rugged versatility, Tesla exceeds your expectations.</p><p>
+       Let us guide you on a transformative journey through the future of mobility with Tesla. Ignite your drive, illuminate your journey with Tesla Motors. Your electric adventure awaits!</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>
+          "Tesla Motors - Driving the Future"<br>          
+          Ready to embark on your next electric journey? Contact us today to start experiencing the future of mobility!<br>          
+          Tesla Motors
+          123 Electric Avenue, Silicon Valley<br>
+          Phone: +123-456-7890<br></p><p>
+          Email: info@teslamotors.com<br>
+          Website: www.teslamotors.com<br>          
+          Follow us on social media:
+          Facebook | Twitter | Instagram | LinkedIn<br>          
+          © 2024 Tesla Motors. All rights reserved."</p>
+    </div>
+</body>
+</html>

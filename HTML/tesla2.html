@@ -1,0 +1,175 @@
+To enhance the layout and content of the provided HTML code, I made several modifications:
+
+1. Added a large Tesla Motors image and the company's name in the header.
+2. Changed the floating words in the text div to a smaller size and added some styling to make them stand out.
+3. Adjusted the navigation links to scroll within the designated area.
+4. Modified the footer to fill the given area and prevent overflow by using flexbox.
+
+Here's the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tesla.inc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #cdddfc;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header img {
+            height: 80px;
+        }
+
+        .navbar {
+            overflow-y: auto;
+            background-color: #ff4076;
+            position: fixed;
+            top: 100px;
+            width: 15%;
+            height: calc(100% - 100px);
+            padding: 10px;
+            font-size: 24px;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .text {
+            overflow-y: auto;
+            background-color: #1b3c7c;
+            color: white;
+            position: absolute;
+            top: 100px;
+            left: 15%;
+            width: 70%;
+            height: calc(100% - 200px);
+            padding: 16px;
+            font-size: 18px;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text img {
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .floating-words {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff4076;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: #cdddfc;
+            position: fixed;
+            bottom: 0;
+            height: 15%;
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .footer p {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0;
+            padding: 10px;
+            flex: 1 1 30%; /* Adjust width of each column */
+            max-width: 30%; /* Maximum width of each column */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src='https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png' alt="Tesla">
+        <div class="title">
+            <h1>Tesla Motors</h1>
+            <h2>The CAR Company...</h2>
+        </div>
+        <img src='https://netrinoimages.s3.eu-west-2.amazonaws.com/2020/01/17/674855/281808/tesla_logo_emblem_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_2952527.jpg' alt="Tesla">
+    </div>
+
+    <!-- Navigation -->
+    <div class="navbar"><center>
+        <p><a href="https://www.google.com" target="_blank">Flights</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Trains</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Buses</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Airport Cabs</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Holiday Packages</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Hotels</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Villas</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Home Stays</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Travel Insurance</a><br></p>
+        <p><a href="https://www.google.com" target="_blank">Flight Status</a><br></p>
+      </center>
+      </div>
+
+    <!-- Main Content -->
+    <div class="text">
+        <div class="floating-words">
+            Ignite Your Drive, Illuminate Your Journey: Choose Tesla Today
+        </div>
+        <p>
+            Welcome to Tesla Motors, the frontier of automotive excellence where innovation meets sustainability, and every mile traversed marks a step towards a brighter, greener future.</p>
+              <img src='https://cdn.motor1.com/images/mgl/8q8Q2/s3/tesla-model-s-plaid.jpg'>
+            <p> At Tesla Motors, we offer more than just cars; we offer experiences waiting to be embraced. From the sleek and sophisticated Model S to the versatile and family-friendly Model Y, from the rugged Cybertruck to the compact yet powerful Model 3, our lineup caters to every driver's needs and desires. </p>
+             <img src='https://cdn.motor1.com/images/mgl/e3Gm3/s3/tesla-model-y-2021-exterior-rendering.jpg'>
+             <p> 
+            Start your electric odyssey amidst the urban skyline, where Tesla's Autopilot technology transforms your commute into a seamless blend of cutting-edge innovation and eco-conscious mobility. Feel the exhilaration of instant acceleration, the serenity of silent rides, and the environmental impact of zero-emission driving.</p>
+              <img src='https://cdn.motor1.com/images/mgl/oP1Jl/s3/tesla-cybertruck.jpg'>
+            <p> No Tesla journey is complete without experiencing the revolutionary technology and luxurious design of the Model X. As you glide silently through city streets or embark on epic road trips, immerse yourself in the epitome of future-forward automotive engineering and sustainable luxury. </p>
+             <img src='https://cdn.motor1.com/images/mgl/jYPoJ/s3/tesla-model-x-2021-exterior-rendering.jpg'><p>  
+            Venture into the realm of electric mobility with confidence, knowing that Tesla's Supercharger network ensures seamless long-distance travel, while over-the-air updates keep your vehicle at the forefront of innovation. Explore the possibilities of sustainable living with Tesla's solar solutions and energy storage options, each contributing to a greener, more sustainable future.</p>
+              <img src='https://cdn.motor1.com/images/mgl/4VZ9w/s3/tesla-model-3.jpg'>
+              <p> Immerse yourself in Tesla's commitment to innovation and sustainability as you witness the evolution of transportation. Indulge your senses in the thrill of driving a Tesla, from the intuitive touchscreen interface to the minimalist yet luxurious interiors. Join the Tesla community and become part of a global movement towards a cleaner, greener future. </p>
+           <img src='https://cdn.motor1.com/images/mgl/8Jqy2/s3/tesla-roadster.jpg'>
+           <p>Discover the unparalleled performance and innovation of Tesla's electric cars, boasting groundbreaking technology, exceptional range, and unmatched safety features. At Tesla Motors, we're dedicated to providing you with unparalleled experiences that showcase the best of electric vehicles. Whether you're seeking high-performance, family-friendly, or rugged versatility, Tesla exceeds your expectations.</p><p>
+           Let us guide you on a transformative journey through the future of mobility with Tesla. Ignite your drive, illuminate your journey with Tesla Motors. Your electric adventure awaits!</p>
+          </div>
+          <div class="footer">
+              <p>
+                "Tesla Motors - Driving the Future"<br>          
+                Ready to embark on your next electric journey? Contact us today to start experiencing the future of mobility!<br>          
+                Tesla Motors
+                123 Electric Avenue, Silicon Valley<br>
+                Phone: +123-456-7890<br></p><p>
+                Email: info@teslamotors.com<br>
+                Website: www.teslamotors.com<br>          
+                Follow us on social media:
+                Facebook | Twitter | Instagram | LinkedIn<br>          
+                © 2024 Tesla Motors. All rights reserved."</p>
+          </div>
+      

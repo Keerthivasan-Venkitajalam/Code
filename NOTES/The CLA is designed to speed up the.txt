@@ -1,0 +1,26 @@
+The CLA is designed to speed up the addition operation by reducing the carry propagation delay¹⁴.
+
+Here's a simplified explanation of how a 4-bit CLA works:
+
+1. **Generate and Propagate Signals:** For each bit in the adder, calculate two intermediate signals: the "generate" signal \(G[i]\) and the "propagate" signal \(P[i]\). These are given by:
+   - \(G[i] = A[i] \cdot B[i]\) (the AND of the two bits being added)
+   - \(P[i] = A[i] \oplus B[i]\) (the XOR of the two bits being added)
+
+2. **Carry Generation:** The carry signal for each bit is then calculated using these generate and propagate signals. The carry-out \(C[i]\) for each bit is given by:
+   - \(C[0] = C_{in}\) (the initial carry-in)
+   - \(C[1] = G[0] + P[0] \cdot C[0]\)
+   - \(C[2] = G[1] + P[1] \cdot G[0] + P[1] \cdot P[0] \cdot C[0]\)
+   - \(C[3] = G[2] + P[2] \cdot G[1] + P[2] \cdot P[1] \cdot G[0] + P[2] \cdot P[1] \cdot P[0] \cdot C[0]\)
+   - \(C[4] = G[3] + P[3] \cdot G[2] + P[3] \cdot P[2] \cdot G[1] + P[3] \cdot P[2] \cdot P[1] \cdot G[0] + P[3] \cdot P[2] \cdot P[1] \cdot P[0] \cdot C[0]\)
+
+3. **Sum Calculation:** Finally, the sum bits \(S[i]\) are calculated using the propagate signals and the carry signals:
+   - \(S[i] = P[i] \oplus C[i]\)
+
+This logic can be implemented using basic AND, OR, and XOR gates¹⁴. The advantage of a CLA is that it calculates the carry bits in advance based on the input signals, which reduces the time to calculate the result of the larger value bits³⁴.
+
+Source: Conversation with Bing, 29/9/2023
+(1) Carry Look-Ahead Adder - GeeksforGeeks. https://www.geeksforgeeks.org/carry-look-ahead-adder/.
+(2) Carry Look Ahead Adder – Circuit, Truth Table & Applications - ElProCus. https://www.elprocus.com/carry-look-ahead-adder/.
+(3) Modeling & Simulation of Carry Look Ahead Adder Using VHDL ... - IJESIT. http://www.ijesit.com/Volume%202/Issue%204/IJESIT201304_13.pdf.
+(4) Carry Lookahead Adder in VHDL and Verilog with Full-Adders. https://nandland.com/carry-lookahead-adder/.
+(5) undefined. http://www.nandland.com.

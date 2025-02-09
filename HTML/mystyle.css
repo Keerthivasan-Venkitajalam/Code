@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire body */
+    margin: 0; /* Remove default margin from the body */
+  }
+  
+  h1 {
+    color: blue; /* Set the color of all <h1> elements to blue */
+    text-align: center; /* Center align all <h1> elements */
+  }
+  
+  p {
+    font-size: 16px; /* Set the font size of all <p> elements to 16px */
+    line-height: 1.5; /* Set the line height of all <p> elements for better readability */
+  }
+  
